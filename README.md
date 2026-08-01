@@ -42,3 +42,33 @@ Additionally, the project demonstrates practical techniques for analyzing large 
 
 ## **Schema Design**
 ![erd](./assets/erd.png)
+
+## **Data Preparation**
+### **Data Quality Assessment**
+The first step is to evaluate the quality of the users dataset before conducting any exploratory analysis.
+
+The following checks will be performed:
+- Exact duplicate records
+- Missing values
+- Primary key uniqueness
+- Domain validation
+- Business rule validation
+
+### **Issues Found**
+| Table          | Result                                    |
+| -------------- | ----------------------------------------- |
+| `users` | No duplicate records, missing values, primary key violations, or data type inconsistencies were identified. |
+
+### **Data Cleaning and Issue Handling**
+**NO ACTIONS REQUIRED SO FAR**
+
+## **Exploratory Data Analysis (EDA)**
+### **Users Distribution by Country**
+![users_distribution_by_country](./charts/1.users_distribution_by_country.png)
+#### **Key Findings**
+- **Egypt** has the largest user base, accounting for **31.92%** of all registered users.
+- **Saudi Arabia** ranks second with **23.03%**, followed by the **UAE** at **18.04%**.
+- **Bahrain** represents the smallest user segment, contributing only **3.01%** of the total user population.
+- The user base is unevenly distributed across countries, with **Egypt** and **Saudi Arabia** together accounting for **more than half** of all registered users.
+#### **Business Interpretation**
+The user acquisition strategy appears to be concentrated in a limited number of markets, particularly **Egypt** and **Saudi Arabia**, where the majority of users are located. This geographic imbalance should be considered when interpreting downstream metrics such as feature adoption, engagement, conversion rate, and revenue. Cross-country comparisons should rely on normalized metrics (e.g., percentages or rates) rather than absolute user counts to avoid misleading conclusions driven by differences in market size.

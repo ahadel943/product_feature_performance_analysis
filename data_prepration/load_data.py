@@ -4,15 +4,22 @@ import pandas as pd
 FILE_PATH = r"E:\DataAnalysis\_Projects\proj_17\datasets"
 
 def load_users(columns=None):
-    """
-        LOAD users DATA
-    """
+
+    parse_dates = ["signup_date", "premium_start_date"]
+
+    if columns is not None:
+        parse_dates = [
+            col
+            for col in parse_dates
+            if col in columns
+        ]
 
     file_path = os.path.join(FILE_PATH, "users.csv")
+
     return pd.read_csv(
         file_path,
-        parse_dates=["signup_date", "premium_start_date"],
-        usecols=columns
+        usecols=columns,
+        parse_dates=parse_dates
     )
 
 
