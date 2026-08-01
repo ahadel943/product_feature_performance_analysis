@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-FILE_PATH = r"D:\Ahmed\data analysis\datasets\product feature dataset\datasets"
+FILE_PATH = r"E:\DataAnalysis\_Projects\proj_17\datasets"
 
 def load_users(columns=None):
     """

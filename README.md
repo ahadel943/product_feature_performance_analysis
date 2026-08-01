@@ -39,3 +39,6 @@ Additionally, the project demonstrates practical techniques for analyzing large 
 | **subscriptions** | Premium subscription history including subscription plans, start dates, and renewal information. | 200,000 |
 | **user_daily_activity** | Daily user activity logs used to analyze engagement, active users, retention, and behavioral trends. | 15,000,000 |
 > **Note:** This project uses a synthetic dataset (**~6.6 GB**) designed to simulate a real-world product analytics environment. The data follows realistic business rules, user behavior patterns, and intentional distribution imbalances to support practical feature performance analysis.
+
+## **Schema Design**
+![erd](./assets/erd.png)
