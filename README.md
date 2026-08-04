@@ -114,5 +114,26 @@ The dataset contains a significantly larger proportion of non-premium users than
 - The acquisition channel distribution is not uniform, with users concentrated in a few dominant acquisition sources.
 #### **Business Interpretation**
 The dataset shows a clear imbalance across acquisition channels, with the majority of users originating from **Organic Search**, **Direct**, and **Social Media**. Since these channels contribute most of the user base, overall metrics such as feature adoption, engagement, and conversion are likely to be influenced primarily by users acquired through these sources. Consequently, channel-level comparisons should consider the unequal distribution of users to avoid drawing conclusions based solely on differences in segment size.
+### **Users Distribution by Device Type**
+![users_distribution_by_device_type](./charts/7.users_distribution_by_device_type.png)
+#### **Key Findings**
+- **Mobile** is the dominant device type, accounting for **68.09%** of the total user base.
+- **Desktop** users represent **23.92%**, making it the second most common device category.
+- **Tablet** has the smallest user share at **7.99%**.
+- The device distribution is highly imbalanced, with more than two-thirds of users accessing the platform via mobile devices.
+#### **Business Interpretation**
+The dataset is heavily skewed toward mobile users, indicating that most user interactions in subsequent analyses will originate from mobile devices. As a result, overall engagement, conversion, and feature usage metrics are likely to be influenced primarily by mobile users due to their substantially larger representation in the dataset. This imbalance should be considered when comparing user behavior across device types.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
