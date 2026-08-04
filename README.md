@@ -80,3 +80,22 @@ The user acquisition strategy appears to be concentrated in a limited number of 
 - **Bahrain** has the **smallest** overall user base, while **Egypt** has the **largest**. This pattern is consistent with the country-level distribution observed previously.
 #### **Business Interpretation**
 The user base appears to have been intentionally distributed evenly across cities within each country rather than concentrated in a few major metropolitan areas. This balanced geographic distribution reduces location bias in subsequent analyses, allowing comparisons between cities without one city disproportionately influencing the results. At the same time, the overall differences in user volume between countries remain evident, with Egypt contributing the largest share of users and Bahrain the smallest, reflecting the country-level distribution rather than differences in city-level concentration.
+### **Users Distribution by Age Group**
+![users_distribution_by_age_group](./charts/3.users_distribution_by_age_group.png)
+#### **Key Findings**
+- The **25–34** age group represents the largest user segment, accounting for **41.14%** of the total user base.
+- Users aged **35–44** represent the second-largest segment at **23.95%**, followed by the **18–24** group at **18.00%**.
+- **Older users** are underrepresented in the dataset, with the **55+** age group contributing only **5.95%** of total users.
+- **The age distribution is not uniform, indicating a clear concentration of users within the 25–44 age range**.
+#### **Business Interpretation**
+The dataset is heavily concentrated around users aged **25–44**, suggesting that the platform primarily serves a working-age audience. Since this segment represents nearly two-thirds of all registered users, overall platform metrics such as feature adoption, conversion, and engagement are likely to be driven primarily by these age groups. Consequently, age-based analyses should account for this imbalance, as results for older age groups may be less representative due to their relatively small sample sizes.
+
+
+
+
+
+
+
+
+
+
