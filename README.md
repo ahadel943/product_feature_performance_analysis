@@ -132,7 +132,15 @@ The dataset is heavily skewed toward mobile users, indicating that most user int
 - No obvious spikes or prolonged periods of growth or decline are observed in the monthly registration counts.
 #### **Business Interpretation**
 User registrations remain consistent across most months, suggesting that the dataset does not exhibit strong seasonality or significant fluctuations in acquisition activity. The isolated decline observed in February is likely attributable to the shorter calendar month rather than a meaningful change in user acquisition behavior. Overall, the stable monthly distribution provides a balanced temporal foundation for subsequent analyses, reducing the risk that feature adoption or engagement metrics are disproportionately influenced by a specific registration period.
-
+### **Premium subscription Monthly Distribution**
+![premium_subscription_monthly_distribution](./charts/9.premium_subscription_monthly_distribution.png)
+#### **Key Findings**
+- User registrations exhibit a clear upward trend throughout the year, increasing from **1,415** registrations (**1.43%**) in **January** to **18,746** registrations (**18.95%**) in **December**.
+- Registration growth is rapid during the first quarter, particularly between **January** and **March**.
+- From **March** to **November**, monthly registrations remain relatively stable, fluctuating between **7.10%** and **9.93%** with only moderate month-to-month variation.
+- **December** records a substantial increase compared with the preceding months, making it the highest registration month in the dataset.
+#### **Business Interpretation**
+The monthly registration pattern suggests that the user base expands rapidly during the early months before entering a relatively stable growth phase for most of the year. Although the difference between January and December appears large, the majority of months from March through November remain within a relatively narrow range, indicating that user acquisition stabilizes after the initial growth period. The sharp increase observed in December stands out from the rest of the year and should be considered separately when interpreting subsequent analyses, as it may disproportionately influence metrics based on user registration volume.
 
 
 
