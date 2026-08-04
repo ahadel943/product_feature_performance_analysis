@@ -105,10 +105,14 @@ The dataset contains a larger proportion of users labeled as **New** compared to
 - The difference between premium and non-premium users is substantial, making the non-premium segment the dominant user group in the dataset.
 #### **Business Interpretation**
 The dataset contains a significantly larger proportion of non-premium users than premium users. At this stage, this should be interpreted as a characteristic of the dataset rather than evidence of actual subscription performance or customer preference. Since premium status is a predefined user attribute, further analyses such as feature adoption, conversion rates, or purchasing behavior will be needed to determine whether premium membership is associated with different user behaviors. The observed imbalance should be considered when comparing metrics between the two user segments.
-
-
-
-
-
+### **Users Distribution by Acquisition Channel**
+![users_distribution_by_acquisition_channel](./charts/6.users_distribution_by_acquisition_channel.png)
+#### **Key Findings**
+- **Organic Search** is the largest acquisition channel, contributing **27.93%** of the total user base.
+- **Direct** is the **second-largest** acquisition source, accounting for **22.10%**, followed by **Social Media** at **18.03%**.
+- **Influencers** contribute the smallest share of users at only **2.96%**, while **Email** represents **5.00%** of the user base.
+- The acquisition channel distribution is not uniform, with users concentrated in a few dominant acquisition sources.
+#### **Business Interpretation**
+The dataset shows a clear imbalance across acquisition channels, with the majority of users originating from **Organic Search**, **Direct**, and **Social Media**. Since these channels contribute most of the user base, overall metrics such as feature adoption, engagement, and conversion are likely to be influenced primarily by users acquired through these sources. Consequently, channel-level comparisons should consider the unequal distribution of users to avoid drawing conclusions based solely on differences in segment size.
 
 
