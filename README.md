@@ -89,7 +89,14 @@ The user base appears to have been intentionally distributed evenly across citie
 - **The age distribution is not uniform, indicating a clear concentration of users within the 25–44 age range**.
 #### **Business Interpretation**
 The dataset is heavily concentrated around users aged **25–44**, suggesting that the platform primarily serves a working-age audience. Since this segment represents nearly two-thirds of all registered users, overall platform metrics such as feature adoption, conversion, and engagement are likely to be driven primarily by these age groups. Consequently, age-based analyses should account for this imbalance, as results for older age groups may be less representative due to their relatively small sample sizes.
-
+### **Users Distribution by Customer Type**
+![users_distribution_by_customer_type](./charts/4.users_distribution_by_customer_type.png)
+#### **Key Findings**
+- **New** customers represent **61.00%** of the user base, while **Returning** customers account for **39.00%**.
+- The customer type distribution is imbalanced, with new customers forming the majority of registered users.
+- The difference between the two segments is substantial, indicating that the dataset contains considerably more new users than returning users.
+#### **Business Interpretation**
+The dataset contains a larger proportion of users labeled as **New** compared to **Returning** customers. At this stage, this observation should be treated as a characteristic of the dataset rather than evidence of actual customer acquisition behavior. Since the customer type is a predefined categorical attribute, additional analysis is required to determine whether this distribution reflects genuine business performance or simply the dataset's labeling and generation logic. This imbalance should, however, be considered when comparing metrics between the two customer segments.
 
 
 
