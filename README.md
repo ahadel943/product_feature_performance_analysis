@@ -123,8 +123,15 @@ The dataset shows a clear imbalance across acquisition channels, with the majori
 - The device distribution is highly imbalanced, with more than two-thirds of users accessing the platform via mobile devices.
 #### **Business Interpretation**
 The dataset is heavily skewed toward mobile users, indicating that most user interactions in subsequent analyses will originate from mobile devices. As a result, overall engagement, conversion, and feature usage metrics are likely to be influenced primarily by mobile users due to their substantially larger representation in the dataset. This imbalance should be considered when comparing user behavior across device types.
-
-
+### **Users Monthly Signup Distribution**
+![users_monthly_signup_distribution](./charts/8.users_monthly_signup_distribution.png)
+#### **Key Findings**
+- Monthly user registrations remained relatively stable throughout **2025**, with monthly contributions ranging from **7.69%** to **8.58%** of the total user base.
+- **May** recorded the highest number of registrations (**25,737 users, 8.58%**), while **February** recorded the lowest (**23,067 users, 7.69%**).
+- Apart from the noticeable decline in February, month-to-month fluctuations are relatively small, indicating a balanced distribution of registrations over the year.
+- No obvious spikes or prolonged periods of growth or decline are observed in the monthly registration counts.
+#### **Business Interpretation**
+User registrations remain consistent across most months, suggesting that the dataset does not exhibit strong seasonality or significant fluctuations in acquisition activity. The isolated decline observed in February is likely attributable to the shorter calendar month rather than a meaningful change in user acquisition behavior. Overall, the stable monthly distribution provides a balanced temporal foundation for subsequent analyses, reducing the risk that feature adoption or engagement metrics are disproportionately influenced by a specific registration period.
 
 
 
