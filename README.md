@@ -97,8 +97,14 @@ The dataset is heavily concentrated around users aged **25–44**, suggesting th
 - The difference between the two segments is substantial, indicating that the dataset contains considerably more new users than returning users.
 #### **Business Interpretation**
 The dataset contains a larger proportion of users labeled as **New** compared to **Returning** customers. At this stage, this observation should be treated as a characteristic of the dataset rather than evidence of actual customer acquisition behavior. Since the customer type is a predefined categorical attribute, additional analysis is required to determine whether this distribution reflects genuine business performance or simply the dataset's labeling and generation logic. This imbalance should, however, be considered when comparing metrics between the two customer segments.
-
-
+### **Users Distribution by Premium Status**
+![users_distribution_by_premium_status](./charts/5.users_distribution_by_premium_status.png)
+#### **Key Findings**
+- **Non-premium** users represent **67.03%** of the total user base, while **Premium** users account for **32.97%**.
+- The premium status distribution is imbalanced, with approximately two-thirds of users belonging to the non-premium segment.
+- The difference between premium and non-premium users is substantial, making the non-premium segment the dominant user group in the dataset.
+#### **Business Interpretation**
+The dataset contains a significantly larger proportion of non-premium users than premium users. At this stage, this should be interpreted as a characteristic of the dataset rather than evidence of actual subscription performance or customer preference. Since premium status is a predefined user attribute, further analyses such as feature adoption, conversion rates, or purchasing behavior will be needed to determine whether premium membership is associated with different user behaviors. The observed imbalance should be considered when comparing metrics between the two user segments.
 
 
 
