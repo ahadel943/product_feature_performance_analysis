@@ -57,7 +57,8 @@ The following checks will be performed:
 ### **Issues Found**
 | Table          | Result                                    |
 | -------------- | ----------------------------------------- |
-| `users` | No duplicate records, missing values, primary key violations, or data type inconsistencies were identified. |
+| `users` | **No data quality issues were identified**. No duplicate records, missing values, primary key violations, or data type inconsistencies were identified. |
+| `products` | **No data quality issues were identified**. No duplicate records, missing values, or primary key violations were found. The table passed all data quality validation checks and required no cleaning before analysis.. |
 
 ### **Data Cleaning and Issue Handling**
 **NO ACTIONS REQUIRED SO FAR**
@@ -141,7 +142,15 @@ User registrations remain consistent across most months, suggesting that the dat
 - **December** records a substantial increase compared with the preceding months, making it the highest registration month in the dataset.
 #### **Business Interpretation**
 The monthly registration pattern suggests that the user base expands rapidly during the early months before entering a relatively stable growth phase for most of the year. Although the difference between January and December appears large, the majority of months from March through November remain within a relatively narrow range, indicating that user acquisition stabilizes after the initial growth period. The sharp increase observed in December stands out from the rest of the year and should be considered separately when interpreting subsequent analyses, as it may disproportionately influence metrics based on user registration volume.
-
+### **Products Distribution by Category**
+![products_distribution_by_category](./charts/10.products_distribution_by_category.png)
+#### **Key Findings**
+- **Electronics** is the largest product category, accounting for **4,293** products (**28.62%**) of the total catalog.
+- **Fashion** ranks second with **3,540** products (**23.60%**), followed by **Home** with **2,647** products (**17.65%**).
+- The **Books** category represents the smallest share of the catalog, contributing **1,227** products (**8.18%**).
+- The **top three** categories (**Electronics, Fashion, and Home**) collectively account for approximately **68.5%** of all products, indicating that the product catalog is concentrated in a relatively small number of categories.
+#### **Business Interpretation**
+The product catalog is not evenly distributed across categories, **with nearly seventy percent of all products concentrated in the Electronics, Fashion, and Home categories**. This concentration suggests that these categories represent the primary focus of the business and are likely to generate the majority of user interactions. As a result, analyses related to feature adoption, engagement, or conversion may naturally be influenced by the distribution of products across these dominant categories. Consequently, category should be considered an important segmentation dimension in subsequent feature performance analyses.
 
 
 
