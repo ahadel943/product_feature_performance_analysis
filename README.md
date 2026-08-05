@@ -151,9 +151,15 @@ The monthly registration pattern suggests that the user base expands rapidly dur
 - The **top three** categories (**Electronics, Fashion, and Home**) collectively account for approximately **68.5%** of all products, indicating that the product catalog is concentrated in a relatively small number of categories.
 #### **Business Interpretation**
 The product catalog is not evenly distributed across categories, **with nearly seventy percent of all products concentrated in the Electronics, Fashion, and Home categories**. This concentration suggests that these categories represent the primary focus of the business and are likely to generate the majority of user interactions. As a result, analyses related to feature adoption, engagement, or conversion may naturally be influenced by the distribution of products across these dominant categories. Consequently, category should be considered an important segmentation dimension in subsequent feature performance analyses.
-
-
-
+### **Products Distribution by Subcategory**
+![products_distribution_by_subcategory](./charts/11.products_distribution_by_subcategory.png)
+#### **Key Findings**
+- Product distribution within each category is **relatively balanced**, with no single subcategory overwhelmingly dominating its parent category.
+- In **Electronics**, products are distributed fairly evenly across **Accessories (7.41%)**, **Laptops (7.20%)**, **Phones (7.15%)**, and **Gaming (6.85%)**.
+- A similar pattern is observed across the remaining categories, where subcategories contribute comparable shares of their respective parent categories.
+- Although the overall product catalog is concentrated in a few major categories, no comparable concentration exists at the subcategory level.
+#### **Business Interpretation**
+While the overall catalog is concentrated within a small number of high-level product categories, the distribution of products across subcategories remains well balanced within each category. This indicates that the catalog offers broad coverage across different product segments rather than relying on a single dominant subcategory. Consequently, analyses performed at the subcategory level are less likely to be biased by product concentration, making subcategory a reliable dimension for segmenting feature usage, engagement, and conversion metrics.
 
 
 
