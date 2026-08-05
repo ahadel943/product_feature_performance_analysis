@@ -160,8 +160,14 @@ The product catalog is not evenly distributed across categories, **with nearly s
 - Although the overall product catalog is concentrated in a few major categories, no comparable concentration exists at the subcategory level.
 #### **Business Interpretation**
 While the overall catalog is concentrated within a small number of high-level product categories, the distribution of products across subcategories remains well balanced within each category. This indicates that the catalog offers broad coverage across different product segments rather than relying on a single dominant subcategory. Consequently, analyses performed at the subcategory level are less likely to be biased by product concentration, making subcategory a reliable dimension for segmenting feature usage, engagement, and conversion metrics.
-
-
+### **Products Distribution by Active Status**
+![products_distribution_by_active_status](./charts/12.products_distribution_by_active_status.png)
+#### **Key Findings**
+- The vast majority of products are marked as **Active**, representing **14,263** products (**95.09%**) of the catalog.
+- Only **737** products (**4.91%**) are marked as **Not Active**.
+- The product catalog is therefore heavily dominated by active products, with inactive products representing a relatively small portion of the dataset.
+#### **Business Interpretation**
+The dataset is predominantly composed of active products, indicating that subsequent analyses will primarily reflect the behavior of products currently available on the platform. However, the meaning of the `is_active` flag cannot be determined from the available data alone. Since no inventory, product lifecycle, or operational status information is provided, inactive products may represent out-of-stock items, discontinued products, temporarily unavailable products, or another business-defined status. Consequently, the `is_active` field should be treated as a categorical label rather than interpreted as evidence of a specific business process.
 
 
 
