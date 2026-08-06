@@ -168,8 +168,26 @@ While the overall catalog is concentrated within a small number of high-level pr
 - The product catalog is therefore heavily dominated by active products, with inactive products representing a relatively small portion of the dataset.
 #### **Business Interpretation**
 The dataset is predominantly composed of active products, indicating that subsequent analyses will primarily reflect the behavior of products currently available on the platform. However, the meaning of the `is_active` flag cannot be determined from the available data alone. Since no inventory, product lifecycle, or operational status information is provided, inactive products may represent out-of-stock items, discontinued products, temporarily unavailable products, or another business-defined status. Consequently, the `is_active` field should be treated as a categorical label rather than interpreted as evidence of a specific business process.
-
-
-
+### **Price Summary Statistics**
+| Metric          | value         |
+| --------------- | ------------- |
+| Minimum Price | 10.06           |
+| Maximum Price | 3999.97         |
+| Average Price | 1980.63         |
+| Q1 (25%)      | 983.46          |
+| Median (50%)  | 1987.65         |
+| Q3 (75%)      | 2964.34         |
+| IQR           | 1980.88         |
+| Standard Deviation | 1145.72    |
+| Coefficient of Variation (CV) | 57.85% |
+| Lower Bounds  | -1987.85        |
+| Upper Bounds  | 5935.65         |
+#### **Key Findings**
+- Product prices range from **10.06** to **3,999.97**, with no statistical outliers based on the IQR method.
+- The **average** product price is **1,980.63**, while the **median** is **1,987.65**, indicating an approximately symmetric distribution with only a very slight negative skew.
+- The middle **50%** of product prices fall between **983.46** and **2,964.34**.
+- Product prices exhibit a **relatively wide spread**, with a **standard deviation of 1,145.72** (**approximately 58% of the average price**), indicating substantial price variation across the catalog.
+#### **Business Interpretation**
+The product catalog spans a broad range of price points while maintaining a relatively balanced price distribution. The absence of statistical outliers indicates that extreme prices are part of the expected pricing strategy rather than anomalies or data quality issues. At the same time, the substantial variation in product prices reflects the diversity of the catalog, which includes products targeting different customer segments and purchasing power. Consequently, price is expected to be an important explanatory variable when analyzing feature adoption, user engagement, and conversion behavior, as customers interacting with low-priced products may exhibit different behaviors from those purchasing premium products.
 
 
