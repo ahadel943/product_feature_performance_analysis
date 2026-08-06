@@ -168,7 +168,7 @@ While the overall catalog is concentrated within a small number of high-level pr
 - The product catalog is therefore heavily dominated by active products, with inactive products representing a relatively small portion of the dataset.
 #### **Business Interpretation**
 The dataset is predominantly composed of active products, indicating that subsequent analyses will primarily reflect the behavior of products currently available on the platform. However, the meaning of the `is_active` flag cannot be determined from the available data alone. Since no inventory, product lifecycle, or operational status information is provided, inactive products may represent out-of-stock items, discontinued products, temporarily unavailable products, or another business-defined status. Consequently, the `is_active` field should be treated as a categorical label rather than interpreted as evidence of a specific business process.
-### **Price Summary Statistics**
+### **Products Price Summary Statistics**
 | Metric          | value         |
 | --------------- | ------------- |
 | Minimum Price | 10.06           |
@@ -189,5 +189,12 @@ The dataset is predominantly composed of active products, indicating that subseq
 - Product prices exhibit a **relatively wide spread**, with a **standard deviation of 1,145.72** (**approximately 58% of the average price**), indicating substantial price variation across the catalog.
 #### **Business Interpretation**
 The product catalog spans a broad range of price points while maintaining a relatively balanced price distribution. The absence of statistical outliers indicates that extreme prices are part of the expected pricing strategy rather than anomalies or data quality issues. At the same time, the substantial variation in product prices reflects the diversity of the catalog, which includes products targeting different customer segments and purchasing power. Consequently, price is expected to be an important explanatory variable when analyzing feature adoption, user engagement, and conversion behavior, as customers interacting with low-priced products may exhibit different behaviors from those purchasing premium products.
-
-
+### **Products Distribution by Price Group**
+![products_distribution_by_price_goup](./charts/13.products_distribution_by_price_goup.png)
+#### **Key Findings**
+- Product prices are distributed across all price bands without heavy concentration in a single segment.
+- The **2,000–3,000** price band contains the **largest** share of products (**25.52%**), closely followed by the **1,000–2,000** (**24.89%**) and **3,000+** (**24.18%**) price bands.
+- Lower-priced products represent a smaller portion of the catalog, with **0–500** accounting for **12.55%** and **500–1,000** accounting for **12.87%**.
+- **Approximately 75%** of all products are priced **above 1,000**, indicating that the catalog is primarily composed of medium- to high-priced products.
+#### **Business Interpretation**
+The catalog is predominantly positioned in the medium- and high-price segments rather than the budget segment. This pricing structure suggests that analyses involving user engagement, feature adoption, or purchasing behavior should account for product price as an important segmentation variable. Since three-quarters of the catalog consists of products priced above **1,000**, conclusions drawn from the overall dataset will naturally be influenced by customer interactions with medium- and premium-priced products.
