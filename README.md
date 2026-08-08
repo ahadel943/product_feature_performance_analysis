@@ -208,8 +208,15 @@ The catalog is predominantly positioned in the medium- and high-price segments r
 - This means that in the current dataset, each session associated with an order corresponds to exactly one order.
 #### **Business Interpretation**
 The orders dataset represents a substantial portion of the user base, with roughly two-thirds of users having at least one recorded order. The one-to-one relationship between order records and sessions is particularly notable: every **session** represented in the orders table generated exactly one order. However, this should not yet be interpreted as a session-to-order conversion rate, because the table only contains sessions that are already associated with orders; **sessions** that did not produce an order are not represented here. The actual conversion behavior will require comparison with the broader sessions or event data.
-
-
+### **Order Status Distribution**
+![orders_distribution_by_order_status](./charts/15.orders_distribution_by_order_status.png)
+#### **Key Findings**
+- **Completed orders** dominate the order distribution, accounting for **91.95%** of all orders.
+- **Cancelled orders** represent **5.00%** of total orders.
+- **Returned orders** represent **3.06%** of total orders.
+- Overall, **8.06%** of orders are non-completed orders, consisting of cancellations and returns.
+#### **Business Interpretation**
+The order distribution indicates a strong completion rate, with the vast majority of recorded orders reaching the Completed status. However, the 8.06% of non-completed orders should not be treated as realized revenue when measuring actual business performance. Completed orders are the appropriate basis for metrics such as realized revenue and AOV, while cancelled and returned orders should be analyzed separately because they represent different forms of revenue leakage and operational friction: cancellations may indicate issues before fulfillment, whereas returns occur after the order has been placed and may point to product, fulfillment, or customer-experience issues.
 
 
 
