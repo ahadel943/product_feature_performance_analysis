@@ -215,10 +215,17 @@ The orders dataset represents a substantial portion of the user base, with rough
 - **Cancelled orders** represent **5.00%** of total orders.
 - **Returned orders** represent **3.06%** of total orders.
 - Overall, **8.06%** of orders are non-completed orders, consisting of cancellations and returns.
+#### **Key Findings**
 #### **Business Interpretation**
 The order distribution indicates a strong completion rate, with the vast majority of recorded orders reaching the Completed status. However, the 8.06% of non-completed orders should not be treated as realized revenue when measuring actual business performance. Completed orders are the appropriate basis for metrics such as realized revenue and AOV, while cancelled and returned orders should be analyzed separately because they represent different forms of revenue leakage and operational friction: cancellations may indicate issues before fulfillment, whereas returns occur after the order has been placed and may point to product, fulfillment, or customer-experience issues.
-
-
+### **Completed Orders by Unique Users**
+![completed_orders_by_unique_users](./charts/16.completed_orders_by_unique_users.png)
+#### **Key Findings**
+- **182,462** unique users have at least one Completed order.
+- This represents approximately **96.34%** of the **189,388 unique** users who placed at least one order.
+- Approximately **3.66%** of users who placed orders have no Completed order in the dataset.
+#### **Key Findings**
+The vast majority of users represented in the orders dataset have at least one Completed order, indicating that users with recorded orders are predominantly associated with successful transactions. The remaining approximately 3.66% of users have orders but no Completed order, meaning their recorded activity consists of cancelled and/or returned orders. This distinction is useful because the **91.95% Completed Order rate is calculated at the order level**, while the **96.34% figure is calculated at the user level**, so the two metrics describe different aspects of order performance and should not be treated as interchangeable.
 
 
 
