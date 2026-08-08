@@ -51,9 +51,18 @@ def load_sessions(columns=None):
         LOAD sessions DATA
     """
     file_path = os.path.join(FILE_PATH, "sessions.csv")
+
+    date_columns = ["session_start", "session_end"]
+
+    if columns is not None:
+        date_columns = [
+            col for col in date_columns
+            if col in columns
+        ]
+
     return pd.read_csv(
         file_path,
-        parse_dates=["session_start", "session_end"],
+        parse_dates=date_columns,
         usecols=columns
     )
 

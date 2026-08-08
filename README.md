@@ -58,7 +58,8 @@ The following checks will be performed:
 | Table          | Result                                    |
 | -------------- | ----------------------------------------- |
 | `users` | **No data quality issues were identified**. No duplicate records, missing values, primary key violations, or data type inconsistencies were identified. |
-| `products` | **No data quality issues were identified**. No duplicate records, missing values, or primary key violations were found. The table passed all data quality validation checks and required no cleaning before analysis.. |
+| `products` | **No data quality issues were identified**. No duplicate records, missing values, or primary key violations were found. The table passed all data quality validation checks and required no cleaning before analysis. |
+| `orders` | **No data quality issues were identified**. The `orders` table contains no duplicate rows or missing values, the `order_id` primary key is unique, and all `user_id` and `session_id` foreign key references have valid matching records in their respective parent tables. |
 
 ### **Data Cleaning and Issue Handling**
 **NO ACTIONS REQUIRED SO FAR**
