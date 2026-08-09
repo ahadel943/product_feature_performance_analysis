@@ -233,7 +233,17 @@ The vast majority of users represented in the orders dataset have at least one C
 - This confirms the previously observed **1 session → 1 order** relationship within the `orders` dataset.
 #### **Business Interpretation**
 At the session level, the dataset shows a 91.95% completed-order rate, meaning that almost all sessions represented in the orders table are associated with successfully completed transactions. However, **this should not be interpreted as the overall session-to-order conversion rate**, because the `orders` table contains only sessions that generated an order; sessions that ended without an order are absent. Therefore, this metric is better understood as the share of order-associated sessions that resulted in Completed orders, while the actual conversion rate would require the full session population as the denominator.
-
+### **Payment Method Distribution**
+![orders_distribution_by_payment_method](./charts/17.orders_distribution_by_payment_method.png)
+#### **Key Findings**
+- **Credit Card** is the most frequently used payment method, accounting for **35.02%** of all orders.
+- **Cash** comes second at **30.01%**.
+- Together, **Credit Card + Cash** account for **65.03%** of all orders.
+- **Wallet** is the third most-used method at **19.99%**.
+- **BNPL** accounts for **9.97%**.
+- **Bank Transfer** is the least-used payment method at only **5.01%**.
+#### **Business Interpretation**
+The payment distribution shows a clear concentration around **Credit Card and Cash**, which together represent **nearly two-thirds of all orders**. This suggests that these two payment methods play the dominant role in the current transaction mix, while digital alternatives such as Wallet and BNPL represent a smaller but still meaningful portion of transactions.
 
 
 
