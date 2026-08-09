@@ -244,11 +244,18 @@ At the session level, the dataset shows a 91.95% completed-order rate, meaning t
 - **Bank Transfer** is the least-used payment method at only **5.01%**.
 #### **Business Interpretation**
 The payment distribution shows a clear concentration around **Credit Card and Cash**, which together represent **nearly two-thirds of all orders**. This suggests that these two payment methods play the dominant role in the current transaction mix, while digital alternatives such as Wallet and BNPL represent a smaller but still meaningful portion of transactions.
+### **Completed Orders Monthly Distribution**
+![completed_orders_monthly_distribution](./charts/18.completed_orders_monthly_distribution.png)
+#### **Key Findings**
+- **Completed** orders show a strong upward and accelerating trend throughout 2025, increasing from **50** orders in **January** to **210,191** orders in **December**.
+- **The growth is not linear**, The increase becomes substantially larger as the year progresses, particularly during the second half of the year.
+- An exponential trendline provides a strong fit to the monthly completed-order distribution: **`y = 0.0002e^(0.6622x)`**
+- The model achieves an **R² of 0.9515**, indicating that the exponential model explains approximately **95.15%** of the variation in the observed monthly trend.
+- **December** alone accounts for **54.43%** of all completed orders, showing a very strong concentration of order activity toward the end of the year.
+#### **Business Interpretation**
+The completed-order distribution indicates a **rapidly accelerating growth pattern rather than a steady linear increase**. The strong exponential fit and high R² support the observation that order activity increased at an increasingly faster rate throughout the year.
 
-
-
-
-
+However, the exponential trend should be interpreted as a **description of the observed 2025 pattern, not as evidence that future orders will necessarily continue growing exponentially**. The extreme concentration of orders in the final months especially December suggests that specific business factors may have contributed to the acceleration. Further analysis is therefore required to determine whether the pattern is associated with **user growth, acquisition activity, seasonality, promotions, product activity, or other business drivers**.
 
 
 
