@@ -256,9 +256,31 @@ The payment distribution shows a clear concentration around **Credit Card and Ca
 The completed-order distribution indicates a **rapidly accelerating growth pattern rather than a steady linear increase**. The strong exponential fit and high R² support the observation that order activity increased at an increasingly faster rate throughout the year.
 
 However, the exponential trend should be interpreted as a **description of the observed 2025 pattern, not as evidence that future orders will necessarily continue growing exponentially**. The extreme concentration of orders in the final months especially December suggests that specific business factors may have contributed to the acceleration. Further analysis is therefore required to determine whether the pattern is associated with **user growth, acquisition activity, seasonality, promotions, product activity, or other business drivers**.
+### **Total Amount Summary Statistics**
+| Metric          | value         |
+| --------------- | ------------- |
+| Minimum | 4.36           |
+| Maximum | 18456.98         |
+| Average | 455.29         |
+| Q1 (25%)      | 192.75          |
+| Median (50%)  | 330.47         |
+| Q3 (75%)      | 566.25         |
+| IQR           | 373.50         |
+| Standard Deviation | 432.94    |
+| Coefficient of Variation (CV) | 95% |
+| Lower Bounds  | -367.50        |
+| Upper Bounds  | 1126.51         |
+#### **Key Findings**
+- `total_amount` ranges from **4.36** to **18,456.98**, indicating a very wide overall spread in order values.
+- The **Average Order Value is 455.29**, while the **Median is 330.47**, indicating a **right-skewed distribution** where higher-value orders pull the mean upward.
+- The **middle 50%** of orders fall between **192.75 and 566.25**, showing that the majority of orders are concentrated within a considerably narrower range than the full distribution suggests.
+- The **IQR is 373.50**, while the **Standard Deviation is 432.94**, indicating substantial variability in order values.
+- The **Coefficient of Variation (CV) is 0.95**, meaning the **standard deviation is approximately 95% of the mean**, indicating high relative variability.
+- The IQR upper bound is **1,126.51**, while the maximum reaches **18,456.98**, providing strong evidence of **extreme high-value outliers**.
+- The lower bound is **-367.50**, but since the minimum is positive at **4.36**, there is no evidence of lower-side outliers based on the 1.5×IQR rule.
+#### **Business Interpretation**
+The `total_amount` distribution indicates that order values are **highly variable and heavily concentrated toward the lower end, with a relatively small number of extremely high-value orders extending the upper tail**. This makes the median a more representative measure of a typical order value than the mean, while the high CV highlights substantial differences in order sizes across customers.
 
-
-
-
+The presence of extreme high-value orders also means that **AOV should be interpreted carefully**, as a relatively small number of large transactions can materially increase the average. From a business perspective, this suggests that the customer/order base contains both typical lower-value transactions and a smaller segment of high-value orders that may warrant separate analysis.
 
 
