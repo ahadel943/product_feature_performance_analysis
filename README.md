@@ -282,5 +282,15 @@ However, the exponential trend should be interpreted as a **description of the o
 The `total_amount` distribution indicates that order values are **highly variable and heavily concentrated toward the lower end, with a relatively small number of extremely high-value orders extending the upper tail**. This makes the median a more representative measure of a typical order value than the mean, while the high CV highlights substantial differences in order sizes across customers.
 
 The presence of extreme high-value orders also means that **AOV should be interpreted carefully**, as a relatively small number of large transactions can materially increase the average. From a business perspective, this suggests that the customer/order base contains both typical lower-value transactions and a smaller segment of high-value orders that may warrant separate analysis.
-
-
+### **Completed Orders Distribution by Total Amount Group**
+![completed_orders_distribution_by_total_amount_group](./charts/19.completed_orders_distribution_by_total_amount_group.png)
+#### **Key Findings**
+- The **250–450** order-value group represents the largest share of completed orders, accounting for **28.76%**.
+- The **150–250** group is the second largest, representing **20.11%** of completed orders.
+- Combined, the **150–450** and **150-250** range accounts for **48.87%** of all completed orders, representing nearly half of the completed-order volume.
+- The **50–150** and **450–600** groups account for **15.30%** and **12.15%**, respectively.
+- Orders **below 50** represent only **0.90%** of completed orders.
+- The **1,100+** group represents **6.66%** of completed orders, indicating a meaningful high-value order segment.
+- Overall, the distribution is concentrated in **the lower-to-mid order-value ranges**, with a smaller high-value tail consistent with the previously observed **right-skewed distribution and upper-side outliers**.
+#### **Business Interpretation**
+The completed-order distribution is primarily concentrated within the **150–450** order-value range, which represents nearly half of all completed orders and therefore reflects the core order-value segment of the business. At the same time, the presence of a meaningful **1,100+ high-value** segment indicates that the business also serves a smaller group of substantially larger transactions, contributing to the long right tail observed in the overall `total_amount` distribution. This suggests that completed orders consist mainly of lower-to-mid-value transactions alongside a distinct high-value segment that could be explored further through customer, product, payment-method, or feature-performance analysis.
