@@ -295,3 +295,12 @@ The presence of extreme high-value orders also means that **AOV should be interp
 - Overall, the distribution is concentrated in **the lower-to-mid order-value ranges**, with a smaller high-value tail consistent with the previously observed **right-skewed distribution and upper-side outliers**.
 #### **Business Interpretation**
 The completed-order distribution is primarily concentrated within the **150–450** order-value range, which represents nearly half of all completed orders and therefore reflects the core order-value segment of the business. At the same time, the presence of a meaningful **1,100+ high-value** segment indicates that the business also serves a smaller group of substantially larger transactions, contributing to the long right tail observed in the overall `total_amount` distribution. This suggests that completed orders consist mainly of lower-to-mid-value transactions alongside a distinct high-value segment that could be explored further through customer, product, payment-method, or feature-performance analysis.
+### **Subscriptions Type Distribution**
+![subscriptions_type_distribution](./charts/20.subscriptions_type_distribution.png)
+#### **Key Findings**
+- **Monthly subscriptions** represent the largest share, accounting for **64.86%** of all subscriptions.
+- **Quarterly subscriptions** account for **25.02%**, making them the second most common subscription type.
+- **Yearly subscriptions** represent only **10.12%** of total subscriptions and are the least common option.
+- Overall, the subscription mix is strongly concentrated toward **shorter-term plans**, with **Monthly and Quarterly** subscriptions together accounting for **89.88%** of all subscriptions.
+#### **Business Interpretation**
+The subscription distribution shows a strong preference toward shorter subscription commitments, with nearly **90% of subscriptions being Monthly or Quarterly plans**, while Yearly subscriptions represent only a small portion of the subscription base. This suggests that users are predominantly choosing plans with shorter commitment periods, which may indicate a preference for flexibility or lower upfront commitment; however, the distribution alone cannot determine the underlying reason for this preference.
