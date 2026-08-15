@@ -304,3 +304,24 @@ The completed-order distribution is primarily concentrated within the **150–45
 - Overall, the subscription mix is strongly concentrated toward **shorter-term plans**, with **Monthly and Quarterly** subscriptions together accounting for **89.88%** of all subscriptions.
 #### **Business Interpretation**
 The subscription distribution shows a strong preference toward shorter subscription commitments, with nearly **90% of subscriptions being Monthly or Quarterly plans**, while Yearly subscriptions represent only a small portion of the subscription base. This suggests that users are predominantly choosing plans with shorter commitment periods, which may indicate a preference for flexibility or lower upfront commitment; however, the distribution alone cannot determine the underlying reason for this preference.
+### **Subscriptions Active Status Distribution**
+![subscriptions_active_status_distribution](./charts/21.subscriptions_active_status_distribution.png)
+#### **Key Findings**
+- **Inactive subscriptions** represent the majority of the subscription base, accounting for **68.18%** of all subscriptions.
+- **Active** subscriptions account for **31.82%** of the total.
+- The distribution shows a clear imbalance between active and inactive subscriptions, with inactive subscriptions representing more than **twice** the active subscription volume.
+#### **Business Interpretation**
+The subscription base is predominantly inactive, with only around one-third of subscriptions currently active. This indicates that a substantial portion of the recorded subscriptions are no longer active, which may reflect subscription expiration, cancellation, or users not renewing their plans. However, the `is_active` distribution alone does not identify the underlying reason for inactivity, so the result should be treated as a description of the subscription status rather than evidence of churn or cancellation behavior.
+
+
+
+
+
+
+
+
+
+
+
+
+
