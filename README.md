@@ -312,10 +312,15 @@ The subscription distribution shows a strong preference toward shorter subscript
 - The distribution shows a clear imbalance between active and inactive subscriptions, with inactive subscriptions representing more than **twice** the active subscription volume.
 #### **Business Interpretation**
 The subscription base is predominantly inactive, with only around one-third of subscriptions currently active. This indicates that a substantial portion of the recorded subscriptions are no longer active, which may reflect subscription expiration, cancellation, or users not renewing their plans. However, the `is_active` distribution alone does not identify the underlying reason for inactivity, so the result should be treated as a description of the subscription status rather than evidence of churn or cancellation behavior.
-
-
-
-
+### **Subscription Start Distribution Over Time**
+![subscriptions_start_distribution_over_time](./charts/22.subscriptions_start_distribution_over_time.png)
+#### **Key Findings**
+- Subscription starts show **a strong increase during the first three months**, rising from **1.43% in January to 7.10% in March**.
+- Subscription activity then enters **a relatively stable period from March through October**, with monthly shares ranging between **7.10% and 8.76%**.
+- **November** shows another increase to **9.93%**, followed by a substantial jump in **December** to **18.95%**.
+- December records the highest subscription-start volume at **18,746 subscriptions**, accounting for **nearly one-fifth** of all subscription starts.
+#### **Business Interpretation**
+The subscription-start distribution indicates that subscription activity did not grow at a constant rate throughout the year; instead, it followed a pattern of initial acceleration, relative stabilization, and renewed growth toward year-end. The relatively stable period from March through October suggests that subscription acquisition reached a consistent level during most of the year, while the sharp increase in November and particularly December indicates a substantial change in subscription activity near the end of the year. Although the distribution clearly identifies these periods of increased subscription activity, the available data does not by itself explain the underlying drivers, which could be investigated further through factors such as user acquisition, promotions, product or feature activity, or seasonal effects.
 
 
 
