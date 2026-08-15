@@ -60,6 +60,7 @@ The following checks will be performed:
 | `users` | **No data quality issues were identified**. No duplicate records, missing values, primary key violations, or data type inconsistencies were identified. |
 | `products` | **No data quality issues were identified**. No duplicate records, missing values, or primary key violations were found. The table passed all data quality validation checks and required no cleaning before analysis. |
 | `orders` | **No data quality issues were identified**. The `orders` table contains no duplicate rows or missing values, the `order_id` primary key is unique, and all `user_id` and `session_id` foreign key references have valid matching records in their respective parent tables. |
+| `subscriptions` | **No data quality issues were identified in the subscriptions table**. The dataset contains no duplicate rows, no missing values, and a unique subscription_id for every record. All `user_id` values successfully match existing users, indicating no orphan subscription records. In addition, all subscription end dates occur after their corresponding start dates, confirming that the subscription date ranges are valid. Overall, the subscriptions table passed all performed data quality checks. |
 
 ### **Data Cleaning and Issue Handling**
 **NO ACTIONS REQUIRED SO FAR**
